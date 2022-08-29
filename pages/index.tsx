@@ -4,12 +4,15 @@ import userData from '../lib/userData'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import Projects from '../components/Projects'
+import GithubSection from '../components/GithubSection'
+import { HomeProps } from '../types/types'
 
-const Home: NextPage = () => {
+const Home: NextPage<HomeProps> = ({ repos }) => {
   return (
     <Layout>
       <Hero />
       <Projects />
+      <GithubSection repos={repos} />
     </Layout>
   )
 }
@@ -20,7 +23,6 @@ export const getServerSideProps: GetServerSideProps = async () => {
   let token = process.env.GITHUB_AUTH_TOKEN
 
   const repos = await getGithubRepos(userData, token)
-  console.log('repos:', repos)
   return {
     props: {
       repos

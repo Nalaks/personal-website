@@ -103,14 +103,12 @@ const userData = {
       desc: 'Subjects being PCM - I barely survived with 93.6% marks aggregate. Flex fridays, fellas.'
     }
   ],
-  resumeUrl:
-    'https://drive.google.com/file/d/1xmE3BOmgM7TAOOgVp36xQIQvYDntDYoo/view?usp=sharing',
+  resumeUrl: '',
   socialLinks: {
-    instagram: 'https://instagram.com/maninthere',
-    twitter: 'https://twitter.com/mannupaaji',
+    instagram: '#',
     linkedin: 'https://linkedin.com/in/manuarora28',
-    github: 'https://github.com/manuarora700',
-    facebook: 'https://facebook.com/'
+    github: 'https://github.com/nalaks',
+    mail: 'mailto:kalan.stefan@gmail.com'
   }
 }
 
