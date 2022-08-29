@@ -1,5 +1,3 @@
-import { GetServerSideProps } from 'next'
-
 export interface IGetGithubRepos {
   (data: GithubData, token?: string): Promise<Response>
 }
@@ -33,4 +31,19 @@ export interface GithubRepoProps {
 
 export interface HomeProps {
   repos: GithubRepo[]
+}
+
+export interface ProjectCardProps {
+  title: string
+  link: string
+  imgUrl: string
+  number: string
+}
+
+export interface ExperienceCardProps {
+  title: string
+  desc: string
+  year: string
+  company: string
+  companyLink: string
 }
