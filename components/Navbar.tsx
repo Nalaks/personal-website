@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import { FC, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
 import { useRouter } from 'next/router'
 import userData from '../lib/userData'
-import About from '../pages/about'
 import {
   FaEnvelope,
   FaSun,
@@ -12,9 +11,18 @@ import {
   FaGithub
 } from 'react-icons/fa'
 
-export default function Navbar() {
+const Navbar: FC = () => {
   const router = useRouter()
   const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
 
   return (
     <div className='max-w-6xl  mx-auto px-4 py-10 md:py-20'>
@@ -131,15 +139,20 @@ export default function Navbar() {
             className='text-base font-normal text-gray-600 dark:text-gray-300'>
             <FaEnvelope size={20} />
           </a>
+
           <button
             aria-label='Toggle Dark Mode'
             type='button'
             className='w-10 h-10 p-3 rounded focus:outline-none'
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-            {theme === 'dark' ? (
-              <FaSun color='yellow' size={18} />
-            ) : (
-              <FaMoon size={18} />
+            {mounted && (
+              <span>
+                {theme === 'dark' ? (
+                  <FaSun color='yellow' size={18} />
+                ) : (
+                  <FaMoon size={18} />
+                )}
+              </span>
             )}
           </button>
         </div>
@@ -174,3 +187,5 @@ export default function Navbar() {
     </div>
   )
 }
+
+export default Navbar

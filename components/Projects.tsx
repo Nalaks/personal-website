@@ -2,6 +2,8 @@ import { FC } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Tilt from 'react-parallax-tilt'
+import { BsArrowUpRightSquare } from 'react-icons/bs'
+import userData from '../lib/userData'
 
 const Projects: FC = () => {
   return (
@@ -12,21 +14,8 @@ const Projects: FC = () => {
             My Projects
           </h1>
           <Link href='/projects'>
-            <a className='mb-20 md:mb-0 px-8 py-4 rounded-md bg-white shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='16'
-                height='16'
-                fill='currentColor'
-                className='bi bi-arrow-up-right-square'
-                stroke='4'
-                strokeWidth='4'
-                viewBox='0 0 16 16'>
-                <path
-                  fillRule='evenodd'
-                  d='M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z'
-                />
-              </svg>
+            <a className='mb-20 md:mb-0 px-8 py-4 rounded-md bg-white shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700 dark:bg-slate-400'>
+              <BsArrowUpRightSquare />
               <p>View all</p>
             </a>
           </Link>
@@ -37,18 +26,18 @@ const Projects: FC = () => {
           {/* Single card */}
           <Tilt>
             <a
-              href='https://tailwindmasterkit.com'
+              href={userData.projects[0].link}
               className='w-full block col-span-3 shadow-2xl'>
               <div className='relative overflow-hidden'>
                 <Image
-                  src='/tmk.jpg'
-                  alt='portfolio'
+                  src={userData.projects[0].imgUrl}
+                  alt={userData.projects[0].title}
                   // className='transform hover:scale-125 transition duration-2000 ease-out'
                   width={500}
                   height={500}
                 />
                 <h1 className='absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2'>
-                  Tailwind Master Kit
+                  {userData.projects[0].title}
                 </h1>
                 <h1 className='absolute bottom-10 left-10 text-gray-50 font-bold text-xl'>
                   01
@@ -59,19 +48,19 @@ const Projects: FC = () => {
           {/* Single card */}
           <Tilt>
             <a
-              href='https://placeholdertech.in'
+              href={userData.projects[1].link}
               className='w-full block col-span-3  sm:col-span-2 shadow-2xl'>
               <div className='relative overflow-hidden'>
                 {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
                 <Image
-                  src='/placeholdertech.png'
-                  alt='portfolio'
+                  src={userData.projects[1].imgUrl}
+                  alt={userData.projects[1].title}
                   // className='transform hover:scale-125 transition duration-2000 ease-out'
                   width={500}
                   height={500}
                 />
                 <h1 className='absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2'>
-                  PlaceholderTech
+                  {userData.projects[1].title}
                 </h1>
                 <h1 className='absolute bottom-10 left-10 text-gray-50 font-bold text-xl'>
                   02
@@ -82,19 +71,19 @@ const Projects: FC = () => {
           {/* Single card */}
           <Tilt>
             <a
-              href='https://manuarora.in'
+              href={userData.projects[2].link}
               className='w-full block col-span-3 sm:col-span-1  object-cover'>
               <div className='relative overflow-hidden shadow-2xl'>
                 {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
                 <Image
-                  src='/portfolio.png'
-                  alt='portfolio'
+                  src={userData.projects[2].imgUrl}
+                  alt={userData.projects[2].title}
                   // className='transform hover:scale-125 transition duration-2000 ease-out object-cover shadow-2xl'
                   width={500}
                   height={500}
                 />
                 <h1 className='absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2'>
-                  Portfolio
+                  {userData.projects[2].title}
                 </h1>
                 <h1 className='absolute bottom-10 left-10 text-gray-50 font-bold text-xl'>
                   03
@@ -105,19 +94,19 @@ const Projects: FC = () => {
 
           <Tilt>
             <a
-              href='https://manuarora.in'
+              href={userData.projects[3].link}
               className='w-full block col-span-3 sm:col-span-1  object-cover'>
               <div className='relative overflow-hidden shadow-2xl'>
                 {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
                 <Image
-                  src='/covidrescue.png'
-                  alt='portfolio'
+                  src={userData.projects[3].imgUrl}
+                  alt={userData.projects[3].title}
                   // className='transform hover:scale-125 transition duration-2000 ease-out object-cover shadow-2xl'
                   width={500}
                   height={500}
                 />
                 <h1 className='absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2'>
-                  CovidRescue
+                  {userData.projects[3].title}
                 </h1>
                 <h1 className='absolute bottom-10 left-10 text-gray-50 font-bold text-xl'>
                   04

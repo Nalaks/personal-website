@@ -8,7 +8,7 @@ const RoughNotationHighlight: FC<RoughNotationHighlightProps> = ({
 }) => {
   // Change the animation duration depending on length of text we're animating (speed = distance / time)
   const animationDuration = Math.floor(
-    30 * (children as React.ReactNode[]).length
+    30 * (children as React.ReactNode[]).length * 0.5
   )
 
   return (

@@ -9,7 +9,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
   const router = useRouter()
 
   const meta = {
-    title: 'Stefan Kalan - Developer, Designer, Creator and Human',
+    title: 'Stefan Kalan - Developer, Designer, Programmer and Creator',
     description: `I've been developing websites for 5 years straight. Get in touch with me to know more.`,
     image: '#',
     type: 'website'
@@ -34,7 +34,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
         <meta property='og:title' content={meta.title} />
         <meta property='og:image' content={meta.image} />
       </Head>
-      <main className='dark:bg-gray-800 w-full'>
+      <main className='dark:bg-gray-800 light:bg-gray-200 w-full'>
         <Navbar />
         <div>{children}</div>
         <Footer />

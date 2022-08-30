@@ -2,111 +2,104 @@ const userData = {
   githubUsername: 'nalaks',
   name: 'Stefan Kalan',
   designation: 'Web Developer',
-  avatarUrl: '/avatar.png',
+  avatarUrl: 'https://via.placeholder.com/1000x1000.png',
   email: 'kalan.stefan@gmail.com',
   phone: '+123456789',
   address: 'Austria, Graz',
   projects: [
     {
-      title: 'Tailwind Master Kit',
-      link: 'https://tailwindmasterkit.com',
-      imgUrl: '/tmk.jpg'
+      title: 'Placeholder1',
+      link: '#',
+      imgUrl: 'https://via.placeholder.com/500.png'
     },
     {
-      title: 'PlaceholderTech',
-      link: 'https://placeholdertech.in',
-      imgUrl: '/placeholdertech.png'
+      title: 'Placeholder2',
+      link: '#',
+      imgUrl: 'https://via.placeholder.com/500.png'
     },
     {
-      title: 'Portfolio',
-      link: 'https://manuarora.in',
-      imgUrl: '/portfolio.png'
+      title: 'Placeholder3',
+      link: '#',
+      imgUrl: 'https://via.placeholder.com/500.png'
     },
     {
-      title: 'CovidRescue',
-      link: 'https://covidrescue.co.in',
-      imgUrl: '/covidrescue.png'
+      title: 'Placeholder4',
+      link: '#',
+      imgUrl: 'https://via.placeholder.com/500.png'
     },
     {
-      title: 'Algochurn',
-      link: 'https://algochurn.com',
-      imgUrl: '/algochurn.png'
+      title: 'Placeholder5',
+      link: '#',
+      imgUrl: 'https://via.placeholder.com/500.png'
     },
     {
-      title: 'Playground',
-      link: 'https://play.placeholdertech.in',
-      imgUrl: '/playground.png'
-    },
-    {
-      title: 'Feedmeback',
-      link: 'https://feedmeback.vercel.app',
-      imgUrl: '/feedmeback.png'
-    },
-    {
-      title: 'Devmedium',
-      link: 'https://devmedium.vercel.app',
-      imgUrl: '/devmedium.png'
+      title: 'Placeholder6',
+      link: '#',
+      imgUrl: 'https://via.placeholder.com/500.png'
     }
   ],
   about: {
     title:
       "I'm a software developer that loves building products and web applications that impact millions of lives",
     description: [
-      `I've been developing full-stack application since I was 10 years old. I didn't know what full-stack meant at that time because the term was not coined back then. I'm so out of content right now that I'm literally crying writing this text since lorem text is so 2012 now.`,
-      `After learning HTML and struggling with CSS, I came up with a brilliant idea of using bootstrap so that I don't have to style everything by myself and - for obvious reasons - if you knew bootstrap, you were cool.`,
-      `But now, I'm a legend. I've been coding in React, Angular, Vue, Svelte, Node.js, Express, Fastify, MongoDB, MySQL, Bootstrap, Tailwind, C, C++, C#, Rust, Haskell, Perl, PHP, Assembly, Logo and YouDontKnowShit programming language etc to name a few. Although I barely know the syntax (Psst, Stack overflow!), I consider myself a Ninja developer I'm laughing right now.`
+      // `I've been developing full-stack application since I was 10 years old. I didn't know what full-stack meant at that time because the term was not coined back then. I'm so out of content right now that I'm literally crying writing this text since lorem text is so 2012 now.`,
+      // `After learning HTML and struggling with CSS, I came up with a brilliant idea of using bootstrap so that I don't have to style everything by myself and - for obvious reasons - if you knew bootstrap, you were cool.`,
+      // `But now, I'm a legend. I've been coding in React, Angular, Vue, Svelte, Node.js, Express, Fastify, MongoDB, MySQL, Bootstrap, Tailwind, C, C++, C#, Rust, Haskell, Perl, PHP, Assembly, Logo and YouDontKnowShit programming language etc to name a few. Although I barely know the syntax (Psst, Stack overflow!), I consider myself a Ninja developer I'm laughing right now.`
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nihil magnam? Voluptates ullam adipisci est quae ipsam doloremque. Quae ratione dolorem cum numquam quasi blanditiis officiis beatae sunt, explicabo molestiae.',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nihil magnam? Voluptates ullam adipisci est quae ipsam doloremque. Quae ratione dolorem cum numquam quasi blanditiis officiis beatae sunt, explicabo molestiae.',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nihil magnam? Voluptates ullam adipisci est quae ipsam doloremque. Quae ratione dolorem cum numquam quasi blanditiis officiis beatae sunt, explicabo molestiae.'
     ],
-    currentProject: 'Tailwind Master Kit',
-    currentProjectUrl: 'https://tailwindmasterkit.com'
+    currentProject: 'Placeholder',
+    currentProjectUrl: '#'
   },
   experience: [
     {
       title: 'Software Developer',
-      company: 'mroads',
+      company: 'test6',
       year: '2021',
-      companyLink: 'https://mroads.com',
-      desc: 'Contributed to our flagship product - Panna - which is an AI powered candidate interviewing product.'
+      companyLink: '#',
+      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nihil magnam? Voluptates ullam adipisci est quae ipsam doloremque.'
     },
     {
-      title: 'Founder and Developer',
-      company: 'TailwindMasterKit',
+      title: 'Developer',
+      company: 'test5',
       year: '2021',
-      companyLink: 'https://tailwindmasterkit.com',
-      desc: 'Developed a marketplace for tailwind web components (React, HTML and Angular) and templates.'
+      companyLink: '#',
+      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nihil magnam? Voluptates ullam adipisci est quae ipsam doloremque.'
     },
     {
-      title: 'Founder and Developer',
-      company: 'Algochurn',
+      title: 'Developer',
+      company: 'test4',
       year: '2021',
-      companyLink: 'https://algochurn.com',
-      desc: 'Your last moment revision friend right before a Tech coding interview. Practice problems and get hired at top Product based companies.'
+      companyLink: '#',
+      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nihil magnam? Voluptates ullam adipisci est quae ipsam doloremque.'
     },
     {
       title: 'Internship',
-      company: 'Intel Corporation',
+      company: 'test3',
       year: '2019',
-      companyLink: 'https://intel.com',
-      desc: 'Developed pothole detection system with OpenCV and computer vision, detects potholes on roads and informs the driver.'
+      companyLink: '#',
+      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nihil magnam? Voluptates ullam adipisci est quae ipsam doloremque.'
     },
     {
       title: 'Graduation',
-      company: 'UPES, Dehradun.',
+      company: 'test2',
       year: '2019',
-      companyLink: 'https://upes.co.in',
-      desc: "Major in Computer Science and Engineering with a CGPA of 7.0. Nobody asks this but it's okay."
+      companyLink: '#',
+      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nihil magnam? Voluptates ullam adipisci est quae ipsam doloremque.'
     },
     {
       title: 'High School',
-      company: 'Delhi Public School, Jaipur.',
-      year: '2015',
-      companyLink: 'https://upes.co.in',
-      desc: 'Subjects being PCM - I barely survived with 93.6% marks aggregate. Flex fridays, fellas.'
+      company: 'Test1',
+      year: '2019',
+      companyLink: '#',
+      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nihil magnam? Voluptates ullam adipisci est quae ipsam doloremque.'
     }
   ],
   resumeUrl: '',
   socialLinks: {
     instagram: '#',
-    linkedin: 'https://linkedin.com/in/manuarora28',
+    linkedin: '#',
     github: 'https://github.com/nalaks',
     mail: 'mailto:kalan.stefan@gmail.com'
   }
